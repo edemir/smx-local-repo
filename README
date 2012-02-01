@@ -1,0 +1,8 @@
+Creates a local repository for offline installation of the features.
+Follow the directions in pom.xml to customize this for your own installation.
+Run mvn generate-resources to populate the local repository
+
+Finally add the local repo to the org.ops4j.pax.url.mvn.defaultRepositories in etc/org.ops4j.pax.url.mvn.cfg.
+
+org.ops4j.pax.url.mvn.defaultRepositories=file:${karaf.home}/${karaf.default.repository}@snapshots, \
+    file:////Users/eerddem/Projects/workspace-smx/smx-dependencies/target/features-repo@snapshots
